@@ -15,5 +15,8 @@ export default defineConfig({
   },
   server: {
     port: 4000,
+    proxy: {
+      '/api': "https://csv-manger-backend-e07cwrrha-savinnsks-projects.vercel.app"
+    }
   },
 })
