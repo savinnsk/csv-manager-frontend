@@ -25,9 +25,9 @@ export function SendButton({setFileName ,eventInput} : SendButtonProps){
           
           let response;
          
-          if(event.target.files[0].name != "test.csv"){
+       
           response = await sendFileService(formData)
-          }
+          
 
           if(response?.status > 399){
             store?.toSetNotification(response.data.message)
